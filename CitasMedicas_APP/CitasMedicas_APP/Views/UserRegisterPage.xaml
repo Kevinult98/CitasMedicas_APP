@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas_APP.Views.UserRegisterPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,20,10" BackgroundColor="#0C0909">
+            
+            <Entry x:Name="TxtCedula" TextTransform="Lowercase"  Placeholder="Cedula" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtNombre" TextTransform="Lowercase"  Placeholder="Nombre" FontSize="Large" TextColor="White"/>
+            <Entry x:Name="TxtTelefono" TextTransform="Lowercase"  Placeholder="Teléfono" FontSize="Large" TextColor="White" Keyboard="Telephone"/>
+            <Entry x:Name="TxtEmail" TextTransform="Lowercase"  Placeholder="Email/UserName" FontSize="Large" TextColor="White" Keyboard="Email"/>
+
+            
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,20,0">
+                <Entry x:Name="TxtPass" WidthRequest="310" TextTransform="Lowercase"  Placeholder="Password" IsPassword="True" FontSize="Large" TextColor="White"/>
+                <Switch x:Name="SeePass" IsToggled="False" Toggled="CmdSeePassword" />
+            </StackLayout> 
+         
+            <FlexLayout AlignContent="Center">
+                <StackLayout  Padding="0,200,0,0" Orientation="Horizontal" HorizontalOptions="End" Spacing="20"> 
+                    <Button Text="Add" WidthRequest="170" Padding="10,0,10,0" />
+                    <Button Text="Cancel" WidthRequest="170" Padding="10,0,10,0"/>
+                </StackLayout>
+            </FlexLayout> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
